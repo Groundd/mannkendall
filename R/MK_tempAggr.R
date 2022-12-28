@@ -104,7 +104,7 @@ MK.tempAggr <- function(data, PW.method = "3PW", resolution, alpha.mk = 95, alph
 
     if (seasonal == TRUE){
  
-        message("Prewithening the full timeseries...")
+        message("Prewhitening the full timeseries...")
         
         ## First prewhite the full timeseries
         dataPW <- prewhite(data.ts = data, column = 2, resolution = resolution, alpha.ak = alpha.ak)
