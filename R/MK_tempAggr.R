@@ -65,7 +65,7 @@ MK.tempAggr <- function(data, PW.method = "3PW", resolution, alpha.mk = 95, alph
         ## dataPW is a dataframe containing the 3 prewhitened series
         ## data.ak_y is the first lag autocorrelation coefficient for the complete time series
 
-        message("Prewithening the timeseries...")
+        message("Prewhitening the timeseries...")
 
         dataPW <- prewhite(data.ts = data, column = 2, resolution = resolution, alpha.ak = alpha.ak)
 
